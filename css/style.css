@@ -1,0 +1,152 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FFEADD;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    padding: 20px;
+    padding-top: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color: #DB005B;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    background-color:#FF6666 ;
+    color: #ffffff;
+    padding: 8px;
+    margin-top: 12px;
+    margin-right: 6px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #DB005B;
+}
+
+.box {
+    background-color: #ffffff;
+    border: 2px solid #FF6666;
+    color: #DB005B;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    width: auto;
+}
+
+input {
+    padding: 8px;
+    margin-top: 8px;
+    width: 100%;
+}
+
+input:focus {
+    background-color: #ffffff;
+    border: 2px solid #DB005B;
+    outline: none;
+}
+
+.input-section {
+    margin-top: 10px;
+}
+
+.navigation {
+    background-color: #FF8989;
+    color:#FFEADD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px; /* Sesuaikan ukuran logo */
+    height: 80px; /* Sesuaikan ukuran logo */
+    margin-right: 10px;
+}
+
+.right-content {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.right-content li {
+    margin-left: 20px;
+}
+
+.navigation h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #FFEADD;
+    margin: 0;
+    font-size: 24px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-left: 20px;
+}
+
+.navigation a {
+    color: #FFEECC;
+    text-decoration: none;
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: color 0.3s;
+    margin-right: 10px;
+}
+
+.navigation a:hover {
+    color: #DB005B;
+}
+
+.footer {
+    background-color: #FF8989;
+    color: #FFEADD;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

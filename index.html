@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Segitiga</title>
+    <link rel="icon" href="assets/kalkulator.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./functions.js"></script>
+    </head>
+<body>
+    <nav class="navigation">
+        <div class="left-content">
+            <img src="assets/kalkulator.png" alt="Logo" class="logo">
+            <h1>Kalkulator Segitiga</h1>
+        </div>
+        <ul class="right-content">
+            <li><a href="#" onclick="showLuasSection()">HITUNG LUAS</a></li>
+            <li><a href="#" onclick="showKelilingSection()">HITUNG KELILING</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+        <section id="luas-section">
+            <h1>Hitung Luas Segitiga</h1>
+            <div class="box">
+                <img src="assets/gambar1.png">
+                <p>Rumus Luas Segitiga</p>
+                <p>L = 1/2 x a x t</p>
+            </div>
+            <p> Keterangan :</p>
+            <p> L = Luas</p>
+            <p> a = Panjang Alas</p>
+            <p> t = Tinggi</p><br>
+            <section class="input-section">
+                <label for="alas-input">Masukkan Alas</label><br>
+                <input type="number" id="alas-input" placeholder="0">
+            </section>
+            <section class="input-section">
+                <label for="tinggi-input">Masukkan Tinggi</label><br>
+                <input type="number" id="tinggi-input" placeholder="0">
+            </section>
+            <button onclick="resetForm()">Reset</button>
+            <button onclick="hitungLuas()">Hitung Luas</button>
+            <p id="hasil-luas"></p>
+            <p id="keterangan-luas"></p>
+            <button onclick="toggleForm()">Hitung Keliling</button>
+        </section>
+        
+        <section id="keliling-section" class="hidden">
+            <h1>Hitung Keliling Segitiga</h1>
+            <div class="box">
+                <img src="assets/gambar1.png">
+                <p>Rumus Keliling Segitiga</p>
+                <p>K = A + B + C</p>
+            </div>
+            <p> Keterangan :</p>
+            <p> K = Keliling</p>
+            <p> A = Panjang Sisi 1</p>
+            <p> B = Panjang Sisi 2</p>
+            <p> C = Panjang Sisi 3</p><br>
+            <section class="input-section">
+                <label for="sisi1-input">Masukkan Panjang Sisi A</label><br>
+                <input type="number" id="sisi1-input" placeholder="0">
+            </section>
+            <section class="input-section">
+                <label for="sisi2-input">Masukkan Panjang Sisi B</label><br>
+                <input type="number" id="sisi2-input" placeholder="0">
+            </section>
+            <section class="input-section">
+                <label for="sisi3-input">Masukkan Panjang Sisi C</label><br>
+                <input type="number" id="sisi3-input" placeholder="0">
+            </section>
+            <button onclick="resetForm()">Reset</button>
+            <button onclick="hitungKeliling()">Hitung Keliling</button>
+            <p id="hasil-keliling"></p>
+            <p id="keterangan-keliling"></p>
+            <button onclick="toggleForm()">Hitung Luas</button>
+        </section>
+        </div>
+    </main>
+    <footer class="footer">
+        &copy; 2023 Kalkulator Segitiga. All rights reserved.
+    </footer>
+</body>
+</html>
